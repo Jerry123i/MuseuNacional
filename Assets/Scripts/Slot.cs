@@ -85,7 +85,8 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 		return canvas.isActiveAndEnabled;
 	}
 
-	public bool IsMouseOnTopOfObject()
+	public bool IsMouseOnTopOfObject() //Acertar a mira disso
+
 	{
 		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		BoxCollider2D collider = GetComponent<BoxCollider2D>();
