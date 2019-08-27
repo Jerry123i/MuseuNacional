@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IPointerDownHandler
 {
 	public ObjectPosition slotType;
 	public MuseumObject placedObject;
 
 	public Canvas canvas;
+
+	private float clock;
+	private IEnumerator holdMouseRoutine;
 
 	[SerializeField]private SpriteRenderer spriteRenderer;
 	[SerializeField] private Sprite emptySprite;
@@ -53,8 +56,31 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	{
 		if (IsFull())
 		{
-			OpenCanvas();
+			OpenCanvas();			
 		}
+	}
+
+	public void OnPointerDown(PointerEventData eventData)
+	{
+		if (IsFull())
+		{
+			holdMouseRoutine = CountMouseHoldClock();
+			StartCoroutine(holdMouseRoutine);
+		}
+	}
+
+	private IEnumerator CountMouseHoldClock()
+	{
+		Debug.Log("Startroutine");
+		clock = 0;
+		while(clock <= 1.0f)
+		{
+			clock += Time.deltaTime;
+			yield return null;
+		}
+		CloseCanvas();
+		InfoCanvas.instance.OpenCanvas(placedObject);
+
 	}
 
 	private void Update()
@@ -63,6 +89,11 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 		{
 			if (CanvasIsOpen() && !IsMouseOnTopOfObject())
 				CloseCanvas();
+		}
+		if (Input.GetMouseButtonUp(0))
+		{
+			if (holdMouseRoutine != null)
+				StopCoroutine(holdMouseRoutine);
 		}
 	}
 

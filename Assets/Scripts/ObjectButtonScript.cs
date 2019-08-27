@@ -14,6 +14,7 @@ public class ObjectButtonScript : MonoBehaviour, IPointerDownHandler
 	public void OnPointerDown(PointerEventData eventData)
 	{
 		ObjectPlacerManager.placer.heldObject = museumObject;
+		ObjectPlacerManager.placer.menuManager.SetScrollbar(false);
 	}
 
 	public void SetObject(MuseumObject o)

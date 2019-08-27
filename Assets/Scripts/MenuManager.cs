@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class MenuManager : MonoBehaviour
 {
 	[SerializeField] private GameObject tabPrefab;
@@ -82,6 +83,11 @@ public class MenuManager : MonoBehaviour
 	{
 		Debug.Log($"Change Tab {index}");
 		SelectedTabIndex = index;
+	}
+
+	public void SetScrollbar(bool state)
+	{
+		categoryTabs[SelectedTabIndex].GetComponentInChildren<ScrollRect>().enabled = state;
 	}
 
 }

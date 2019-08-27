@@ -6,6 +6,8 @@ public class ObjectPlacerManager : MonoBehaviour
 {
 	public static ObjectPlacerManager placer;
 
+	public MenuManager menuManager;
+
 	public MuseumObject heldObject;
 	public Slot selectedSlot;
 
@@ -20,6 +22,8 @@ public class ObjectPlacerManager : MonoBehaviour
 		{
 			placer = this;
 		}
+
+		menuManager = GetComponent<MenuManager>();
 	}
 
 	private void Update()
@@ -32,6 +36,7 @@ public class ObjectPlacerManager : MonoBehaviour
 
 	private void TouchUp()
 	{
+		menuManager.SetScrollbar(true);
 		if(heldObject != null && selectedSlot == null)
 		{
 			heldObject = null;
