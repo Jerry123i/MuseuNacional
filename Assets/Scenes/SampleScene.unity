@@ -295,7 +295,7 @@ PrefabInstance:
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100.835556
+      value: -185.0194
       objectReference: {fileID: 0}
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
@@ -687,7 +687,7 @@ PrefabInstance:
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100.835556
+      value: -185.0194
       objectReference: {fileID: 0}
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
@@ -889,7 +889,7 @@ PrefabInstance:
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100.835556
+      value: -185.0194
       objectReference: {fileID: 0}
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
@@ -1073,7 +1073,7 @@ PrefabInstance:
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100.835556
+      value: -185.0194
       objectReference: {fileID: 0}
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
@@ -1112,6 +1112,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1202,6 +1203,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a50da65651e5a4f8f5dc6cea088230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera_GameObject: {fileID: 519420028}
 --- !u!1 &652982644
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &652982645
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1563,7 +1577,7 @@ PrefabInstance:
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100.835556
+      value: -185.0194
       objectReference: {fileID: 0}
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
@@ -1765,7 +1779,7 @@ PrefabInstance:
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100.835556
+      value: -185.0194
       objectReference: {fileID: 0}
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
@@ -1967,7 +1981,7 @@ PrefabInstance:
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100.835556
+      value: -185.0194
       objectReference: {fileID: 0}
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
@@ -2029,8 +2043,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -12.09, y: -12.16}
-  m_SizeDelta: {x: 16.65, y: 16.81}
+  m_AnchoredPosition: {x: -28.5, y: -28.72}
+  m_SizeDelta: {x: 49.46, y: 49.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1263318870
 MonoBehaviour:
@@ -2277,7 +2291,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 27.7
+  m_fontSize: 56.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2681,7 +2695,7 @@ PrefabInstance:
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100.835556
+      value: -185.0194
       objectReference: {fileID: 0}
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
@@ -3002,7 +3016,7 @@ PrefabInstance:
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100.835556
+      value: -185.0194
       objectReference: {fileID: 0}
     - target: {fileID: 6344440065682022671, guid: ee655f9f9167ae547bfeded52be9e149,
         type: 3}

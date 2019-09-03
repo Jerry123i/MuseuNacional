@@ -11,6 +11,8 @@ public class ObjectPlacerManager : MonoBehaviour
 	public MuseumObject heldObject;
 	public Slot selectedSlot;
 
+    public CameraHandler cameraHandler;
+
 	private void Awake()
 	{
 		if(placer != null)
@@ -37,6 +39,7 @@ public class ObjectPlacerManager : MonoBehaviour
 	private void TouchUp()
 	{
 		menuManager.SetScrollbar(true);
+        cameraHandler.enabled = true;
 		if(heldObject != null && selectedSlot == null)
 		{
 			heldObject = null;
@@ -45,11 +48,16 @@ public class ObjectPlacerManager : MonoBehaviour
 		{
 			Build();
 		}
+        else
+        {
+            selectedSlot = null;
+        }
 	}
 
 	private void Build()
 	{
 		selectedSlot.Place(heldObject);
+        selectedSlot = null;
 		heldObject = null;
 	}
 
