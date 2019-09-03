@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour
 	[SerializeField] private GameObject buttonPrefab;
 	[SerializeField] private List<CategoryTab> categoryTabs;
 	[SerializeField] private List<string> categoryNames;
+    [SerializeField] private GameObject objectsMenu;
 
 	private Object[] allObjects;
 
@@ -86,5 +87,10 @@ public class MenuManager : MonoBehaviour
 	{
 		categoryTabs[SelectedTabIndex].GetComponentInChildren<ScrollRect>().enabled = state;
 	}
+
+    public void ToggleObjectsMenu()
+    {
+        objectsMenu.SetActive(!objectsMenu.activeInHierarchy);
+    }
 
 }
