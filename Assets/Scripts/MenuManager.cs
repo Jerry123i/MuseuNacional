@@ -30,13 +30,10 @@ public class MenuManager : MonoBehaviour
 		SelectedTabIndex = 0;
 	}
 
-	private void Update()
+	private void Start()
 	{
-		if (Input.GetKeyDown("p"))
-		{
-			LoadObjects();
-			CreateMenus();
-		}
+		LoadObjects();
+		CreateMenus();
 	}
 
 	private void LoadObjects()

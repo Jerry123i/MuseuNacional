@@ -11,6 +11,7 @@ public class ObjectButtonScript : MonoBehaviour, IPointerDownHandler
 	public RawImage image;
 	public TextMeshProUGUI label;
 
+
 	public void OnPointerDown(PointerEventData eventData)
 	{
 		ObjectPlacerManager.placer.heldObject = museumObject;
@@ -22,6 +23,11 @@ public class ObjectButtonScript : MonoBehaviour, IPointerDownHandler
 		museumObject = o;
 		image.texture = o.image;
 		label.text = o.name;
+	}
+
+	public void OpenInfoCanvas()
+	{
+		InfoCanvas.instance.OpenCanvas(museumObject);
 	}
 
 }
