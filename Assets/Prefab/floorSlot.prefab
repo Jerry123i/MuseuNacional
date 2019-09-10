@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 3575392537696218684}
   - component: {fileID: -6623783195139302388}
   m_Layer: 0
-  m_Name: floor
+  m_Name: floorSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,7 +171,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 491b21e67388f8d4eb80776d45779ec7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 659c8de8de140144fbefe062678b18e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -199,7 +199,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1377778, y: 1.1377778}
+    oldSize: {x: 5.12, y: 5.12}
     newSize: {x: 0.68266666, y: 0.68266666}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
   placedObject: {fileID: 0}
   canvas: {fileID: 3476960846340518791}
   spriteRenderer: {fileID: 2313177750509131195}
-  emptySprite: {fileID: 21300000, guid: 491b21e67388f8d4eb80776d45779ec7, type: 3}
+  emptySprite: {fileID: 21300000, guid: 659c8de8de140144fbefe062678b18e9, type: 3}
   fullSprite: {fileID: 21300000, guid: 53a2bf00839f33e439623a6489227ecd, type: 3}
 --- !u!1 &5569353396519300951
 GameObject:

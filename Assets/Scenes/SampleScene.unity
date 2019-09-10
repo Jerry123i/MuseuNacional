@@ -512,8 +512,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   map: {fileID: 2800000, guid: a5fd5787b958c354fa3cd65f80549400, type: 3}
   slotSize: 1.06
-  floor: {fileID: 5166873136473590531, guid: 63c13ce443e41a74c935a713aa4ebd06, type: 3}
-  wall: {fileID: 2502784723280949518, guid: 3749993324d71284daf4b74d00e8dde3, type: 3}
+  emptyFloor: {fileID: 5166873136473590531, guid: 90cc62d6606b96647ab5e7c5047158f9,
+    type: 3}
+  slotFloor: {fileID: 5166873136473590531, guid: 63c13ce443e41a74c935a713aa4ebd06,
+    type: 3}
+  emptyWall: {fileID: 2502784723280949518, guid: 3749993324d71284daf4b74d00e8dde3,
+    type: 3}
+  slotWall: {fileID: 2502784723280949518, guid: 0bcc837b7941dcd42a11e7229ff93fb5,
+    type: 3}
 --- !u!1001 &292989126
 PrefabInstance:
   m_ObjectHideFlags: 0
