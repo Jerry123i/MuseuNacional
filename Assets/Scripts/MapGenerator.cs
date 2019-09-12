@@ -46,7 +46,6 @@ public class MapGenerator : MonoBehaviour
 
         if (pixelColor == Color.blue)
         {
-
             Color up = map.GetPixel(x, y + 1);
             Color down = map.GetPixel(x, y - 1);
             Color right = map.GetPixel(x + 1, y);
@@ -57,7 +56,7 @@ public class MapGenerator : MonoBehaviour
             else if (right == Color.white && left == Color.black)
                 SpawnWallFacingRight(position);
             else if (down == Color.white && up == Color.black)
-                SpawnWallFacingRight(position);
+                SpawnWallFacingDown(position);
             else if (left == Color.white && right == Color.black)
                 SpawnWallFacingLeft(position);
             else
