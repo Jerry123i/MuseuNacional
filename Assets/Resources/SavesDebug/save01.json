@@ -154,7 +154,7 @@
         },
         {
             "slotName": "floorSlot(Clone)",
-            "objectName": "*vazio*"
+            "objectName": "Dinossauro"
         },
         {
             "slotName": "floorSlot(Clone)",
@@ -166,7 +166,7 @@
         },
         {
             "slotName": "wallSlot(Clone)",
-            "objectName": "*vazio*"
+            "objectName": "Dinossauro"
         },
         {
             "slotName": "wallSlot(Clone)",
