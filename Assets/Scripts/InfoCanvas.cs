@@ -28,7 +28,27 @@ public class InfoCanvas : MonoBehaviour
 
 	public void SetInfo(MuseumObject museumObject)
 	{
+		StartCoroutine(ResizeObjectRoutine(museumObject));
+	}
+
+	IEnumerator ResizeObjectRoutine(MuseumObject museumObject)
+	{
+		RectTransform rectTransform = image.rectTransform;
+
 		image.texture = museumObject.image;
+		rectTransform.offsetMin = new Vector2(rectTransform.offsetMin.x, 0);
+		rectTransform.offsetMax = new Vector2(rectTransform.offsetMax.x, 0);
+
+		yield return new WaitForEndOfFrame();
+
+		float newImageHeight = 100;
+
+		float objectWidth = (newImageHeight * museumObject.image.width) / museumObject.image.height;
+
+		Debug.Log($"{newImageHeight}*{museumObject.image.width}/{museumObject.image.height}");
+
+		rectTransform.sizeDelta = new Vector2(objectWidth * 1.75f, 0);
+
 		title.text = museumObject.name;
 		descriptionText.text = museumObject.description;
 	}

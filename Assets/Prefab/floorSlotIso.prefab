@@ -226,6 +226,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 2313177750509131195}
   emptySprite: {fileID: 21300000, guid: 7b2091cece692494d8fcca69e1a54aef, type: 3}
   fullSprite: {fileID: 21300000, guid: 82fedaff99a0dba4787cbc2a98d2ca7f, type: 3}
+  debug: 0
 --- !u!1 &5569353396519300951
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,8 +262,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -0.2439, y: 0.2409}
-  m_SizeDelta: {x: 0.4019, y: 0.4019}
+  m_AnchoredPosition: {x: -0.343, y: 0.452}
+  m_SizeDelta: {x: 0.2346, y: 0.2346}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &980944769979059617
 CanvasRenderer:

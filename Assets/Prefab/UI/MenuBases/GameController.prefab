@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9178520035440658670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9178520035440658669}
+  - component: {fileID: 9178520035440658668}
+  - component: {fileID: 9178520035440658667}
+  - component: {fileID: 9178520035440658666}
+  - component: {fileID: 9178520035440658665}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9178520035440658669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178520035440658670}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0094267, y: -0.46320933, z: -2.0838883}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9178520035440658668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178520035440658670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d818204cbd4b03846a6dd29d715981ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuManager: {fileID: 0}
+  heldObject: {fileID: 0}
+  selectedSlot: {fileID: 0}
+  cameraHandler: {fileID: 0}
+--- !u!114 &9178520035440658667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178520035440658670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec8a73a28d690234ea8ff5e745e2994b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabPrefab: {fileID: 1690508014445768633, guid: ee655f9f9167ae547bfeded52be9e149,
+    type: 3}
+  buttonPrefab: {fileID: 9451331662240536, guid: d4c0abbe34d106747b3bc6de5d503b9e,
+    type: 3}
+  categoryTabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  categoryNames:
+  - "Bot\xE2nica"
+  - Vertebrados
+  - Invertebrados/Etmologia
+  - Paleontologia
+  - "Mateor\xEDtica e Minerais"
+  - Arqueologia
+  - Etnologia
+  - Antropologia
+  - "Hist\xF3ria do Pal\xE1cio"
+  objectsMenu: {fileID: 0}
+--- !u!114 &9178520035440658666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178520035440658670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735666e8257470141a406c426856f9c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {fileID: 2800000, guid: a5fd5787b958c354fa3cd65f80549400, type: 3}
+  slotSize: 1.06
+  emptyFloor: {fileID: 5166873136473590531, guid: 90cc62d6606b96647ab5e7c5047158f9,
+    type: 3}
+  slotFloor: {fileID: 5166873136473590531, guid: 63c13ce443e41a74c935a713aa4ebd06,
+    type: 3}
+  emptyWall: {fileID: 2502784723280949518, guid: 3749993324d71284daf4b74d00e8dde3,
+    type: 3}
+  slotWall: {fileID: 2502784723280949518, guid: 0bcc837b7941dcd42a11e7229ff93fb5,
+    type: 3}
+--- !u!114 &9178520035440658665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178520035440658670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddd537cd39411c49a87bcc7a8999828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveData: []
+  path: Assets/Resources/SavesDebug

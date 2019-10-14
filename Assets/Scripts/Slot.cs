@@ -17,6 +17,13 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	[SerializeField] private Sprite emptySprite;
 	[SerializeField] private Sprite fullSprite;
 
+	public bool debug;
+
+	private void FixedUpdate()
+	{
+		debug = IsMouseOnTopOfObject();
+	}
+
 	private void Awake()
 	{
 		canvas.enabled = false;
@@ -30,6 +37,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
 	public void Empty()
 	{
+		Debug.Log("Empty");
 		placedObject = null;
 		spriteRenderer.sprite = emptySprite;
 	}
@@ -78,6 +86,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 			clock += Time.deltaTime;
 			yield return null;
 		}
+		Debug.Log("CountMouseHoldClock");
 		CloseCanvas();
 		InfoCanvas.instance.OpenCanvas(placedObject);
 
@@ -88,7 +97,10 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 		if (Input.GetMouseButtonDown(0))
 		{
 			if (CanvasIsOpen() && !IsMouseOnTopOfObject())
+			{
+				Debug.Log("CanvasIsOpen() && !IsMouseOnTopOfObject()");
 				CloseCanvas();
+			}
 		}
 		if (Input.GetMouseButtonUp(0))
 		{
@@ -103,6 +115,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	}
 	public void CloseCanvas()
 	{
+		Debug.Log("Close canvas");
 		canvas.enabled = false;
 	}
 
@@ -119,14 +132,15 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	public bool IsMouseOnTopOfObject() //Acertar a mira disso
 
 	{
-		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		//Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		Vector2 mousePosition = Input.mousePosition;
 		BoxCollider2D collider = GetComponent<BoxCollider2D>();
-		Vector2 position = transform.position;
+		//Vector2 position = transform.position;
+		Vector2 position = Camera.main.WorldToScreenPoint(transform.position);
 
-		position += collider.offset;
+		//position += collider.offset;
 
-		return ((mousePosition.x > position.x - (collider.size.x / 2) && mousePosition.x < position.x + (collider.size.x / 2)) &&
-			(mousePosition.y > position.y - (collider.size.x / 2) && mousePosition.y < position.y + collider.size.y / 2));
+		return (mousePosition - position).magnitude < 45.0f; //Falta multiplicar por uma funcao do tamanho da camera isso aqui
 
 	}
 
