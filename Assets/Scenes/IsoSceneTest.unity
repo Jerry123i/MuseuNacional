@@ -267,6 +267,61 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6634948835698616947, guid: 8c2a6b008abf6574d906f8c98a1eee1a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634948836739398564, guid: 8c2a6b008abf6574d906f8c98a1eee1a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634948836739398564, guid: 8c2a6b008abf6574d906f8c98a1eee1a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634948836739398564, guid: 8c2a6b008abf6574d906f8c98a1eee1a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634948836739398564, guid: 8c2a6b008abf6574d906f8c98a1eee1a,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634948836739398564, guid: 8c2a6b008abf6574d906f8c98a1eee1a,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634948836820683950, guid: 8c2a6b008abf6574d906f8c98a1eee1a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634948836820683950, guid: 8c2a6b008abf6574d906f8c98a1eee1a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634948836820683950, guid: 8c2a6b008abf6574d906f8c98a1eee1a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634948836820683950, guid: 8c2a6b008abf6574d906f8c98a1eee1a,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634948836820683950, guid: 8c2a6b008abf6574d906f8c98a1eee1a,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6634948837610700425, guid: 8c2a6b008abf6574d906f8c98a1eee1a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
