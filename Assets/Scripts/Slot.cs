@@ -140,7 +140,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
 		//position += collider.offset;
 
-		return (mousePosition - position).magnitude < 45.0f; //Falta multiplicar por uma funcao do tamanho da camera isso aqui
+		return (mousePosition - position).magnitude < 70.0f; //Falta multiplicar por uma funcao do tamanho da camera isso aqui
 
 	}
 
