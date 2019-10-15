@@ -10,4 +10,7 @@ public class CategoryTab : MonoBehaviour
 	public RectTransform tab;
 	public TextMeshProUGUI title;
 	public Scrollbar scrollbar;
+	public Image tabImage;
+	public RectTransform tabRect;
+	public RectTransform backgroundRect;
 }

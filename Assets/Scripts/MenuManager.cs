@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 
 public class MenuManager : MonoBehaviour
@@ -10,11 +11,18 @@ public class MenuManager : MonoBehaviour
 	[SerializeField] private GameObject buttonPrefab;
 	[SerializeField] private List<CategoryTab> categoryTabs;
 	[SerializeField] private List<string> categoryNames;
+	[SerializeField] private List<Sprite> categoryImages;
     [SerializeField] private GameObject objectsMenu;
+	[SerializeField] private RectTransform toggleMenuButton;
 
 	private Object[] allObjects;
 
 	private int selectedTabIndex;
+
+	private bool isMenuOpen;
+
+	public int tabRecoilHeight;
+	public int screenHeight = 600;
 
 	public int SelectedTabIndex { get => selectedTabIndex;
 
@@ -33,6 +41,10 @@ public class MenuManager : MonoBehaviour
 
 	private void Start()
 	{
+	//#if UNITY_ANDROID
+	//		screenHeight = Screen.currentResolution.height;
+	//#endif
+
 		LoadObjects();
 		CreateMenus();
 	}
@@ -60,6 +72,7 @@ public class MenuManager : MonoBehaviour
 			tab.GetComponent<Button>().onClick.AddListener(() => { ChangeTab(j); });
 
 			categoryTab.title.text = categoryNames[i];
+			categoryTab.tabImage.sprite = categoryImages[i];
 
 		}
 
@@ -90,7 +103,52 @@ public class MenuManager : MonoBehaviour
 
     public void ToggleObjectsMenu()
     {
-        objectsMenu.SetActive(!objectsMenu.activeInHierarchy);
+		//objectsMenu.SetActive(!objectsMenu.activeInHierarchy);
+
+		if (!isMenuOpen)
+		{
+			RectTransform sample = categoryTabs[0].backgroundRect;
+			float finalPosition = ((sample.anchorMax.y - sample.anchorMin.y) / 2f) + sample.anchorMin.y;
+
+			finalPosition *= screenHeight;
+
+			Debug.Log(finalPosition);
+
+			for (int i = 0; i < categoryTabs.Count; i++)
+			{
+				RectTransform bgrt = categoryTabs[i].backgroundRect;
+				RectTransform tabrt = categoryTabs[i].tabRect;
+				bgrt.DOMoveY(finalPosition, 1.5f);
+				tabrt.DOMoveY(screenHeight - tabrt.sizeDelta.y / 2, 1.0f);
+
+			}
+
+			toggleMenuButton.DOMoveY(sample.anchorMin.y * screenHeight, 1.5f);
+
+			isMenuOpen = true;
+		}
+		else
+		{
+
+			RectTransform sample = categoryTabs[0].backgroundRect;
+			float finalPosition = ((sample.anchorMax.y - sample.anchorMin.y) * screenHeight) + screenHeight;
+
+			for (int i = 0; i < categoryTabs.Count; i++)
+			{
+				RectTransform bgrt = categoryTabs[i].backgroundRect;
+				RectTransform tabrt = categoryTabs[i].tabRect;
+
+				bgrt.DOMoveY(finalPosition, 1.5f);
+				tabrt.DOMoveY(screenHeight + tabrt.sizeDelta.y/2 - tabRecoilHeight, 1.0f);
+
+			}
+
+			toggleMenuButton.DOMoveY(screenHeight - tabRecoilHeight - toggleMenuButton.sizeDelta.y, 1.5f);
+
+			isMenuOpen = false;
+		}
+
+
     }
 
 }
