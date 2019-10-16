@@ -431,6 +431,7 @@ GameObject:
   - component: {fileID: 6344440065347364571}
   - component: {fileID: 6344440065347364570}
   - component: {fileID: 6344440065347364573}
+  - component: {fileID: 616056619596469776}
   m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
@@ -447,7 +448,7 @@ RectTransform:
   m_GameObject: {fileID: 6344440065347364572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2400604, y: 1, z: 1}
   m_Children:
   - {fileID: 6344440065759040002}
   m_Father: {fileID: 6344440067173318048}
@@ -455,7 +456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 11.300003, y: 0}
+  m_AnchoredPosition: {x: 24.1, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6344440065347364571
@@ -546,6 +547,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Scrollbar+ScrollEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &616056619596469776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6344440065347364572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7aa681f67a2b74790f981f8df6f208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollbar: {fileID: 6344440065347364573}
 --- !u!1 &6344440065682022670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,7 +1035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.82904863, a: 0}
+  m_Color: {r: 1, g: 0, b: 0.82904863, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

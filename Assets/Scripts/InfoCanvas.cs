@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class InfoCanvas : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class InfoCanvas : MonoBehaviour
 	[SerializeField] private GameObject background;
 
 	public static InfoCanvas instance;
+
+	public float screenLenght = 1024;
 
 	private void Awake()
 	{
@@ -24,6 +27,13 @@ public class InfoCanvas : MonoBehaviour
 		{
 			instance = this;
 		}
+	}
+
+	private void Start()
+	{
+		//#if UNITY_ANDROID
+		//		screenLenght = Screen.currentResolution.lenght;
+		//#endif
 	}
 
 	public void SetInfo(MuseumObject museumObject)
@@ -56,12 +66,26 @@ public class InfoCanvas : MonoBehaviour
 	public void OpenCanvas(MuseumObject museumObject)
 	{
 		SetInfo(museumObject);
-		background.SetActive(true);
+
+		RectTransform rt = background.GetComponent<RectTransform>();
+
+		float position = ((rt.anchorMax.x - rt.anchorMin.x) / 2f) + rt.anchorMin.x;
+		position *= screenLenght;
+
+		rt.DOMoveX(position, 0.8f);
+
+		//background.SetActive(true);
 	}
 
 	public void CloseCanvas()
 	{
-		background.SetActive(false);
+		//background.SetActive(false);
+
+		RectTransform rt = background.GetComponent<RectTransform>();
+
+		float position = -((rt.anchorMax.x - rt.anchorMin.x) * screenLenght);
+		rt.DOMoveX(position, 0.8f);
+
 	}
 
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4342698036633397584}
   - component: {fileID: 7890256523366453369}
   - component: {fileID: 1553767294782660751}
+  - component: {fileID: 8082829277215310680}
   m_Layer: 5
   m_Name: ObjectButton
   m_TagString: Untagged
@@ -94,6 +95,26 @@ MonoBehaviour:
   museumObject: {fileID: 11400000, guid: cde2fb29dafefaa4d9c51a1976d8d301, type: 2}
   image: {fileID: 5721942430283694857}
   label: {fileID: 216330963097329445}
+  animator: {fileID: 8082829277215310680}
+--- !u!95 &8082829277215310680
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9451331662240536}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 919b27a57dc35c24da5c8c07a93497db, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &672814496311907307
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,8 +394,8 @@ RectTransform:
   m_Father: {fileID: 5334208851115118545}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.36977527, y: 0.76532465}
-  m_AnchorMax: {x: 0.41997755, y: 0.9813436}
+  m_AnchorMin: {x: 0.34359923, y: 0.66282797}
+  m_AnchorMax: {x: 0.42737362, y: 0.96860844}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 1}

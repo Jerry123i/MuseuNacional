@@ -14,6 +14,7 @@ public class MenuManager : MonoBehaviour
 	[SerializeField] private List<Sprite> categoryImages;
     [SerializeField] private GameObject objectsMenu;
 	[SerializeField] private RectTransform toggleMenuButton;
+	[SerializeField] private RectTransform toggleMenuArrow;
 
 	private Object[] allObjects;
 
@@ -112,18 +113,17 @@ public class MenuManager : MonoBehaviour
 
 			finalPosition *= screenHeight;
 
-			Debug.Log(finalPosition);
-
 			for (int i = 0; i < categoryTabs.Count; i++)
 			{
 				RectTransform bgrt = categoryTabs[i].backgroundRect;
 				RectTransform tabrt = categoryTabs[i].tabRect;
-				bgrt.DOMoveY(finalPosition, 1.5f);
+				bgrt.DOMoveY(finalPosition, 0.8f);
 				tabrt.DOMoveY(screenHeight - tabrt.sizeDelta.y / 2, 1.0f);
 
 			}
 
-			toggleMenuButton.DOMoveY(sample.anchorMin.y * screenHeight, 1.5f);
+			toggleMenuButton.DOMoveY((sample.anchorMin.y - 0.1f) * screenHeight, 0.8f);
+			toggleMenuArrow.DORotate(new Vector3(0, 0, 180), 0.75f);
 
 			isMenuOpen = true;
 		}
@@ -138,12 +138,13 @@ public class MenuManager : MonoBehaviour
 				RectTransform bgrt = categoryTabs[i].backgroundRect;
 				RectTransform tabrt = categoryTabs[i].tabRect;
 
-				bgrt.DOMoveY(finalPosition, 1.5f);
+				bgrt.DOMoveY(finalPosition, 0.8f);
 				tabrt.DOMoveY(screenHeight + tabrt.sizeDelta.y/2 - tabRecoilHeight, 1.0f);
 
 			}
 
-			toggleMenuButton.DOMoveY(screenHeight - tabRecoilHeight - toggleMenuButton.sizeDelta.y, 1.5f);
+			toggleMenuButton.DOMoveY(screenHeight - tabRecoilHeight - toggleMenuButton.sizeDelta.y, 0.8f);
+			toggleMenuArrow.DORotate(new Vector3(0, 0, 0), .75f);
 
 			isMenuOpen = false;
 		}

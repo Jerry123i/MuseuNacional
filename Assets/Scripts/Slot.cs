@@ -17,6 +17,8 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	[SerializeField] private Sprite emptySprite;
 	[SerializeField] private Sprite fullSprite;
 
+	[SerializeField] private Animator animator;
+
 	public bool debug;
 
 	private void FixedUpdate()
@@ -33,11 +35,12 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	{
 		placedObject = museumObject;
 		spriteRenderer.sprite = fullSprite;
+		animator.SetTrigger("Place");
 	}
 
 	public void Empty()
 	{
-		Debug.Log("Empty");
+		animator.SetTrigger("Empty");
 		placedObject = null;
 		spriteRenderer.sprite = emptySprite;
 	}
@@ -79,14 +82,12 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
 	private IEnumerator CountMouseHoldClock()
 	{
-		Debug.Log("Startroutine");
 		clock = 0;
 		while(clock <= 1.0f)
 		{
 			clock += Time.deltaTime;
 			yield return null;
 		}
-		Debug.Log("CountMouseHoldClock");
 		CloseCanvas();
 		InfoCanvas.instance.OpenCanvas(placedObject);
 
@@ -98,7 +99,6 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 		{
 			if (CanvasIsOpen() && !IsMouseOnTopOfObject())
 			{
-				Debug.Log("CanvasIsOpen() && !IsMouseOnTopOfObject()");
 				CloseCanvas();
 			}
 		}
