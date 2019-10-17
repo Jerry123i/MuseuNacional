@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: Panapana
+  m_EditorClassIdentifier: 
+  name: "Panapan\xE1"
+  image: {fileID: 2800000, guid: dff1e3772c557a849af9a3265943131f, type: 3}
+  description: "A cole\xE7\xE3o de insetos do Departamento de Entomologia possui um
+    acervo de mais de 5 milh\xF5es de exemplares, principalmente da fauna neotropical.
+    Esse acervo \xE9 de inestim\xE1vel e inigual\xE1vel valor, sendo o Museu Nacional
+    considerado um dos maiores centros de refer\xEAncia da diversidade entomol\xF3gica
+    da Am\xE9rica do Sul. Nessa cole\xE7\xE3o, alguns grupos de insetos s\xE3o conservados
+    em meio l\xEDquido (\xE1lcool et\xEDlico), mas a grande maioria \xE9 preservada
+    a seco e est\xE1 depositada em milhares de gavetas, como os besouros da esp\xE9cie
+    Pyrodes nitidus, cujos machos apresentam consider\xE1vel varia\xE7\xE3o crom\xE1tica,
+    com sua bela cor met\xE1lica. Esta esp\xE9cie tem h\xE1bitos diurnos e \xE9 freq\xFCente
+    na Mata Atl\xE2ntica. No acervo entomol\xF3gico h\xE1 ainda belos exemplares de
+    borboletas e mariposas da fauna brasileira como as borboletas de colora\xE7\xE3o
+    azul met\xE1lica, usadas como adorno por povos nativos brasileiros, representando
+    a for\xE7a da natureza. Muitas dessas lepid\xF3pteras est\xE3o em risco de extin\xE7\xE3o,
+    por causa da destrui\xE7\xE3o de seus h\xE1bitats e das coletas indiscriminadas."
+  position: 0
+  category: 2

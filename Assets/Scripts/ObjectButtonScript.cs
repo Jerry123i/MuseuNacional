@@ -31,8 +31,34 @@ public class ObjectButtonScript : MonoBehaviour, IPointerDownHandler
 	public void SetObject(MuseumObject o)
 	{
 		museumObject = o;
-		image.texture = o.image;
 		label.text = o.name;
+		RectTransform rt = image.rectTransform;
+
+		if (o.image == null) return;
+
+		//float buttonImageProportion = (rt.anchorMax.x - rt.anchorMin.x) / (rt.anchorMax.y - rt.anchorMin.y);
+
+		float buttonImageProportion = 124f / 86f;
+		float inverseButtonImageProportion = 86f / 124f;
+
+		float originalImageProportion = (float)o.image.width / (float)o.image.height;
+		float inverseOriginalImageProportion = (float)o.image.height / (float)o.image.width;
+
+		Debug.Log($"{o.name}: {o.image.width}/{o.image.height} ({originalImageProportion} vs {buttonImageProportion})");
+
+		image.texture = o.image;
+
+		if (originalImageProportion < 1)
+		{
+			image.uvRect = new Rect(0, 0.5f, 1, originalImageProportion* inverseButtonImageProportion);
+
+		}
+		else if (originalImageProportion > 1)
+		{
+
+			image.uvRect = new Rect(0.5f, 0, inverseOriginalImageProportion* buttonImageProportion, 1);
+		}
+
 	}
 
 	public void OpenInfoCanvas()

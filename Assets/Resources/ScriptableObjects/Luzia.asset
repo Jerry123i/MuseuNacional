@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: Luzia
+  m_EditorClassIdentifier: 
+  name: Luzia
+  image: {fileID: 2800000, guid: 94e8529624628ea47be12fbf04963219, type: 3}
+  description: "Corresponde ao esqueleto mais antigo das Am\xE9ricas, datado de 11,5
+    mil anos atr\xE1s. \xC9 popularmente conhecido como Luzia, e acredita-se que tinha
+    25 anos na \xE9poca de sua morte. Embora existam vest\xEDgios dos primeiros ocupantes
+    do territ\xF3rio brasileiro em todo o pa\xEDs, especialmente em Lagoa Santa, Minas
+    Gerais, local de origem deste esqueleto, tais vest\xEDgios s\xE3o mais abundantes.
+    Em 1824 o paleont\xF3logo dinamarqu\xEAs Peter Lund foi o pioneiro nas pesquisas
+    em Lagoa Santa foi. Posteriormente em 1926, o naturalista Padberg-Drenkpol deu
+    in\xEDcio a novos estudos e, nos anos 1970, o Museu Nacional/UFRJ participou de
+    uma miss\xE3o franco-brasileira que achou o cr\xE2nio de Luzia na equipe coordenada
+    pela arque\xF3loga Annette Laming-Emperaire."
+  position: 0
+  category: 5

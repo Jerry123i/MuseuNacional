@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: EsculturaFemininaSemCabeca
+  m_EditorClassIdentifier: 
+  name: "Escultura Feminina, Sem Cabe\xE7a"
+  image: {fileID: 2800000, guid: 69026a3d978f53a4fa7ecdeda96be2c7, type: 3}
+  description: "A pe\xE7a retratada \xE9 uma est\xE1tuta kor\xE9 de estilo arcaizante,
+    possivelmente c\xF3pia, da \xE9poca romana. A figura feminina pertence ao conjunto
+    de objetos encontrados em uma tumba durante escava\xE7\xF5es conduzidas em Veio
+    (It\xE1lia), em 1853. Feita em m\xE1rmore branco e rosado."
+  position: 0
+  category: 5

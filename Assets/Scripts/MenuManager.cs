@@ -74,7 +74,7 @@ public class MenuManager : MonoBehaviour
 
 			categoryTab.title.text = categoryNames[i];
 			categoryTab.tabImage.sprite = categoryImages[i];
-
+					
 		}
 
 		for (int i = 0; i < allObjects.Length; i++)
@@ -89,8 +89,12 @@ public class MenuManager : MonoBehaviour
 			buttonScript.SetObject(museumObject);
 
 		}
-	}
 
+		for (int i = 0; i < categoryTabs.Count; i++)
+			categoryTabs[i].scrollbar.value = 1f;
+
+	}
+	
 	void ChangeTab(int index)
 	{
 		Debug.Log($"Change Tab {index}");

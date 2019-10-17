@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: Shaamunemsu
+  m_EditorClassIdentifier: 
+  name: Sha-Amun-Em-Su
+  image: {fileID: 2800000, guid: 32f325faf80fe2740afbe85310e86dd3, type: 3}
+  description: "Pertenceu ao acervo do Egito Antigo, foi comprada em leil\xE3o em
+    1826 por Dom Pedro I, tendo posteriormente outra parte sido comprada. N\xE3o h\xE1
+    registro preciso sobre sua proced\xEAncia mas acredita-se que tenha vindo da regi\xE3o
+    de Tebas. O esquife de Sha- amun-em-su foi um presente pessoal dado pelo soberano
+    eg\xEDpcio Quediva Ismai ao Imperador Dom Pedro II, em sua visita ao Egito em
+    1876. O imperador o manteve em seu gabinete at\xE9 a proclama\xE7\xE3o da Rep\xFAblica,
+    em 1889, quando a pe\xE7a passou a integrar a cole\xE7\xE3o do Museu Nacional."
+  position: 0
+  category: 5

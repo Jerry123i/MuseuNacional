@@ -43,24 +43,29 @@ public class InfoCanvas : MonoBehaviour
 
 	IEnumerator ResizeObjectRoutine(MuseumObject museumObject)
 	{
-		RectTransform rectTransform = image.rectTransform;
-
-		image.texture = museumObject.image;
-		rectTransform.offsetMin = new Vector2(rectTransform.offsetMin.x, 0);
-		rectTransform.offsetMax = new Vector2(rectTransform.offsetMax.x, 0);
-
-		yield return new WaitForEndOfFrame();
-
-		float newImageHeight = 100;
-
-		float objectWidth = (newImageHeight * museumObject.image.width) / museumObject.image.height;
-
-		Debug.Log($"{newImageHeight}*{museumObject.image.width}/{museumObject.image.height}");
-
-		rectTransform.sizeDelta = new Vector2(objectWidth * 1.75f, 0);
-
 		title.text = museumObject.name;
 		descriptionText.text = museumObject.description;
+
+		if (museumObject.image != null)
+		{
+			RectTransform rectTransform = image.rectTransform;
+
+			image.texture = museumObject.image;
+			rectTransform.offsetMin = new Vector2(rectTransform.offsetMin.x, 0);
+			rectTransform.offsetMax = new Vector2(rectTransform.offsetMax.x, 0);
+
+			yield return new WaitForEndOfFrame();
+
+			float newImageHeight = 100;
+
+			float objectWidth = (newImageHeight * museumObject.image.width) / museumObject.image.height;
+
+			Debug.Log($"{newImageHeight}*{museumObject.image.width}/{museumObject.image.height}");
+
+			rectTransform.sizeDelta = new Vector2(objectWidth * 1.75f, 0);
+		}
+
+
 	}
 
 	public void OpenCanvas(MuseumObject museumObject)
@@ -73,14 +78,10 @@ public class InfoCanvas : MonoBehaviour
 		position *= screenLenght;
 
 		rt.DOMoveX(position, 0.8f);
-
-		//background.SetActive(true);
 	}
 
 	public void CloseCanvas()
 	{
-		//background.SetActive(false);
-
 		RectTransform rt = background.GetComponent<RectTransform>();
 
 		float position = -((rt.anchorMax.x - rt.anchorMin.x) * screenLenght);

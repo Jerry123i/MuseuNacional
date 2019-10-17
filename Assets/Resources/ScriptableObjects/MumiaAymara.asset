@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: MumiaAymara
+  m_EditorClassIdentifier: 
+  name: "M\xFAmia Aymara"
+  image: {fileID: 2800000, guid: 85afb6ad4a22eb54c87084e36b359de7, type: 3}
+  description: "M\xFAmia Aymara de individuo do sexo masculino, encontrada no entorno
+    do Lago Titicaca, regi\xE3o andina entre o Peru e a Bol\xEDvia. Fardo funer\xE1rio
+    envolvendo um homem morto entre 30 e 40 anos de idade. Segundo a tradi\xE7\xE3o
+    Aymara, o morto era vestido sentado com os joelhos junto do queixo e amarrado,
+    em seguida era tecido o cesto que envolvia o corpo, deixando de fora apenas o
+    rosto e as pontas dos p\xE9s. Acervo sem data."
+  position: 0
+  category: 5

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: PreguicasGigantes
+  m_EditorClassIdentifier: 
+  name: "Pregui\xE7as Gigantes"
+  image: {fileID: 2800000, guid: 68ac2fc2e970b2b4eba2979f09a5fee4, type: 3}
+  description: "Pregui\xE7as-gigante da esp\xE9cie Eremotherium laurillardi cujos
+    f\xF3sseis s\xE3o encontrados em quase todos os estados brasileiros. Eram animais
+    terrestres, que alcan\xE7avam at\xE9 3 metros de comprimento e pesavam cerca de
+    1,5 tonelada. Herb\xEDvoros, tinham dentes que lhes permitiam mastigar vegetais
+    duros e \xE1speros."
+  position: 0
+  category: 5

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: "AfrescosDePomp\xE9ia"
+  m_EditorClassIdentifier: 
+  name: "Afrescos de Pomp\xE9ia"
+  image: {fileID: 0}
+  description: "Culturas Mediterr\xE2neas Pomp\xE9ia e Herculano A Cole\xE7\xE3o Imperatriz
+    Teresa Cristina possui cerca de 700 pe\xE7as advindas da antiguidade cl\xE1ssica.
+    Entre essas se encontram os Afrescos, pinturas murais feitas no reboco fresco,
+    da\xED o nome. Os afrescos do Museu Nacional/UFRJ, afrescos da cidade de Pomp\xE9ia,
+    chegaram ao Brasil em 1855, presente do rei das Duas Sic\xEDlias, Dom Fernando
+    II, irm\xE3o da Imperatriz Teresa Cristina. N\xE3o se conhecia sua origem, mas
+    \ gravuras do Templo de \xCDsis, em Pomp\xE9ia, um dos s\xEDtios arqueol\xF3gicos
+    mais visitados, sugerem que sejam oriundos de l\xE1. Fundada pelos gregos, pr\xF3xima
+    \xE0 ba\xEDa de N\xE1poles, Pomp\xE9ia foi ocupada pelos etruscos e depois pelos
+    romanos. Em 79 d.C. foi sepultada por uma camada de 6 metros de cinza e pedra-pomes
+    lan\xE7adas durante quatro dias numa erup\xE7\xE3o do vulc\xE3o Ves\xFAvio."
+  position: 0
+  category: 5

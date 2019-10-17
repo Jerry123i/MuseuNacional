@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: AmostraDeQuartzo
+  m_EditorClassIdentifier: 
+  name: Amostra de Quartzo
+  image: {fileID: 2800000, guid: c00cd8762da93f54a90c184d950778c4, type: 3}
+  description: "Este mineral de 8x3 cm foi doado pelo presidente Get\xFAlio Vargas
+    ao Museu Nacional em 1940, \xE9 procedente de Governador Valadares, Minas Gerais."
+  position: 0
+  category: 4

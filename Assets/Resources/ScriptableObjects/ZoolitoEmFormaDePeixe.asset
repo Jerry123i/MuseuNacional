@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: ZoolitoEmFormaDePeixe
+  m_EditorClassIdentifier: 
+  name: Zoolito em Forma de Peixe
+  image: {fileID: 2800000, guid: 2f6aecec24cb711489a971ae62675a17, type: 3}
+  description: "Objeto cerimonial em pedra muito elaborado, com refinamento est\xE9tico
+    e sofistica\xE7\xE3o art\xEDstica, produzido por popula\xE7\xF5es que habitavam
+    a costa do Brasil entre o Rio Grande do Sul e a Bahia. Essas pe\xE7as apresentam
+    uma pequena depress\xE3o situada quase sempre na regi\xE3o ventral dos animais
+    representados, que se sup\xF5e terem sido destinadas ao processamento de subst\xE2ncias
+    capazes de produzir est\xEDmulos sensoriais, utilizadas em cerim\xF4nias e ritos.
+    Fazia parte da cole\xE7\xE3o da pr\xE9-hist\xF3ria brasileira, foi encontrado
+    em um sambaqui no litoral de Santa Catarina."
+  position: 0
+  category: 5

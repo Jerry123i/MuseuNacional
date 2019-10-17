@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: TacaCofreBatalhaDeConstantino
+  m_EditorClassIdentifier: 
+  name: "Ta\xE7a-Cofre \"Batalha de Constantino\""
+  image: {fileID: 2800000, guid: 614c1e3b9ca8c79498f87f0907883658, type: 3}
+  description: "A ta\xE7a foi doada por D. Jo\xE3o VI por ocasi\xE3o da cria\xE7\xE3o
+    do Museu Real. \xC9 feita de prata, fabricada artesanalmente no s\xE9culo XIX
+    (ca. 1818), em estilo neocl\xE1ssico, ornada na parte superior com escultura em
+    coral que representa a Batalha de Constantino, possui 13cm de altura."
+  position: 0
+  category: 8

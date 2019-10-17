@@ -340,7 +340,7 @@ MonoBehaviour:
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 36
+  m_fontSizeMin: 10
   m_fontSizeMax: 45
   m_fontStyle: 0
   m_textAlignment: 514
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 18.077637, y: 0, z: 19.772415, w: 0}
   m_textInfo:
     textComponent: {fileID: 6634948836739398564}
     characterCount: 8
@@ -432,8 +432,8 @@ RectTransform:
   m_Father: {fileID: 6634948835698616946}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.031527538, y: 0.03237656}
-  m_AnchorMax: {x: 0.92952764, y: 0.45675915}
+  m_AnchorMin: {x: 0.03, y: 0.03237656}
+  m_AnchorMax: {x: 0.97, y: 0.45470372}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -493,12 +493,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 30
+  m_fontSize: 20
   m_fontSizeBase: 30
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 5
+  m_fontSizeMax: 20
   m_fontStyle: 0
   m_textAlignment: 258
   m_characterSpacing: 0

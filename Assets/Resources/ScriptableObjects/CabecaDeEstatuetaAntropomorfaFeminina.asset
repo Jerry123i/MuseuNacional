@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: CabecaDeEstatuetaAntropomorfaFeminina
+  m_EditorClassIdentifier: 
+  name: "Cabe\xE7a de Estatueta Antropomorfa Feminina"
+  image: {fileID: 2800000, guid: 8b4cb65e82a60104ead2e84f68bd9939, type: 3}
+  description: "Com olhos fechados em forma de gr\xE3os de caf\xE9, t\xEDpicos da
+    cultura Santar\xE9m, essa cabe\xE7a, que foi destacada do seu corpo, apresenta
+    v\xE1rios atributos: al\xE9m de adornos auriculares, seu cabelo foi cuidadosamente
+    penteado portando um elaborado toucado constitu\xEDdo por um cobre-nuca e uma
+    grinalda ornada com tr\xEAs cabe\xE7as de morcego de cada lado. Apresenta orif\xEDcios
+    circulares nas narinas e nos ouvidos. Data de 1000 a 1400 a.D."
+  position: 0
+  category: 6

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: MascaraTikuna
+  m_EditorClassIdentifier: 
+  name: "M\xE1scara Tikuna"
+  image: {fileID: 2800000, guid: eaa3c814cf5326541bb8b163dfeca523, type: 3}
+  description: "Esta foi uma das m\xE1scaras Tikuna observadas e desenhadas por Debret
+    durante a Miss\xE3o Art\xEDstica Francesa (1816-1831) e publicadas em sua obra
+    \u201CViagem Pitoresca e Hist\xF3rica ao Brasil\u201D (1834-39). Um dos destaques
+    das cole\xE7\xF5es oitocentista do Museu Nacional."
+  position: 0
+  category: 7

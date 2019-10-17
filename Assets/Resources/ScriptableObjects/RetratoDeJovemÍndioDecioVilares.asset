@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
-  m_Name: NewMuseumObject 2
+  m_Name: "RetratoDeJovem\xCDndioDecioVilares"
   m_EditorClassIdentifier: 
-  name: concha
-  image: {fileID: 2800000, guid: abcbf322ddc4cec4aa4fa8d69448ed93, type: 3}
-  description: "n \xE9 um dinossauro"
+  name: "Retrato De Jovem \xCDndio - D\xE9cio Vilares"
+  image: {fileID: 0}
+  description: "\xD3leo sobre tela. 53 X 43,5cm Figurou na Exposi\xE7\xE3o Antropol\xF3gica
+    de 1882, n\xB0 15. Nazareno, Botocudo Nak-Nanuk, Rio Doce; de 16 anos de idade;
+    em busto. Pintado a \xF3leo do natural por D\xE9cio Villares, 1882 (MN)."
   position: 0
-  category: 1
+  category: 7

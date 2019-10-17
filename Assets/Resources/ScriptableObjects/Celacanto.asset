@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: Celacanto
+  m_EditorClassIdentifier: 
+  name: Celacanto
+  image: {fileID: 2800000, guid: 5c5129654082c8249960f7a5943d2bb9, type: 3}
+  description: "O Celacanto do Museu Nacional chegou ao Museu Nacional no in\xEDcio
+    de 1970. Foi requisitado pelo ent\xE3o diretor, Jos\xE9 Lacerda de Ara\xFAjo Feio,
+    ao Museu Nacional de Hist\xF3ria Natural de Paris, na Fran\xE7a, onde estava a
+    maior parte dos poucos esp\xE9cimes. Em tamanho natural, pesa cerca de 50 quilos,
+    e foi fabricado com base no terceiro celacanto capturado. A pe\xE7a foi enviada
+    de Paris em barco a vapor no dia 24 de dezembro de 1969. No dia 23 de setembro
+    de 1970 inaugurou a primeira exposi\xE7\xE3o do Celacanto, no sagu\xE3o do Museu
+    Nacional, por ocasi\xE3o do primeiro Semin\xE1rio Brasileiro de Paleontologia."
+  position: 0
+  category: 1

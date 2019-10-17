@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: Chatelaine
+  m_EditorClassIdentifier: 
+  name: "Chat\xEAlaine"
+  image: {fileID: 0}
+  description: "S\xE9culo XIX. Corrente com 15 cm de comprimento, pendentes com 5,
+    4 e 3 cm, comprimento total 20 cm \u2013 objeto de uso pessoal, muito utilizado
+    no s\xE9culo XIX para prender o rel\xF3gio de bolso. Supostamente pertenceu ao
+    imperador D. Pedro II. O exemplar apresenta corrente em metal dourado e ouro,
+    ornada com tr\xEAs pendentes: no primeiro encontra-se afixada em arma\xE7\xE3o
+    decorativa, lembrando a coroa imperial, uma pedra ametista lapidada em formato
+    oval; no segundo est\xE1 o retrato em perfil do imperador D. Pedro II em  pequena
+    placa de ouro, tamb\xE9m oval; e no terceiro uma pequena placa de ouro com esfera
+    armilar encimada por coroa imperial."
+  position: 0
+  category: 8
