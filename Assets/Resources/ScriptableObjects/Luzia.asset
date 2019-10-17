@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Luzia
   image: {fileID: 2800000, guid: 94e8529624628ea47be12fbf04963219, type: 3}
+  imageOffset: 0.2
   description: "Corresponde ao esqueleto mais antigo das Am\xE9ricas, datado de 11,5
     mil anos atr\xE1s. \xC9 popularmente conhecido como Luzia, e acredita-se que tinha
     25 anos na \xE9poca de sua morte. Embora existam vest\xEDgios dos primeiros ocupantes

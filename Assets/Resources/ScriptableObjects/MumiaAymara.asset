@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "M\xFAmia Aymara"
   image: {fileID: 2800000, guid: 85afb6ad4a22eb54c87084e36b359de7, type: 3}
+  imageOffset: 0.45
   description: "M\xFAmia Aymara de individuo do sexo masculino, encontrada no entorno
     do Lago Titicaca, regi\xE3o andina entre o Peru e a Bol\xEDvia. Fardo funer\xE1rio
     envolvendo um homem morto entre 30 e 40 anos de idade. Segundo a tradi\xE7\xE3o

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Pregui\xE7as Gigantes"
   image: {fileID: 2800000, guid: 68ac2fc2e970b2b4eba2979f09a5fee4, type: 3}
+  imageOffset: 0.2
   description: "Pregui\xE7as-gigante da esp\xE9cie Eremotherium laurillardi cujos
     f\xF3sseis s\xE3o encontrados em quase todos os estados brasileiros. Eram animais
     terrestres, que alcan\xE7avam at\xE9 3 metros de comprimento e pesavam cerca de

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Cabe\xE7a de Estatueta Antropomorfa Feminina"
   image: {fileID: 2800000, guid: 8b4cb65e82a60104ead2e84f68bd9939, type: 3}
+  imageOffset: 0.2
   description: "Com olhos fechados em forma de gr\xE3os de caf\xE9, t\xEDpicos da
     cultura Santar\xE9m, essa cabe\xE7a, que foi destacada do seu corpo, apresenta
     v\xE1rios atributos: al\xE9m de adornos auriculares, seu cabelo foi cuidadosamente

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "M\xE1scara Tikuna"
   image: {fileID: 2800000, guid: eaa3c814cf5326541bb8b163dfeca523, type: 3}
+  imageOffset: 0.02
   description: "Esta foi uma das m\xE1scaras Tikuna observadas e desenhadas por Debret
     durante a Miss\xE3o Art\xEDstica Francesa (1816-1831) e publicadas em sua obra
     \u201CViagem Pitoresca e Hist\xF3rica ao Brasil\u201D (1834-39). Um dos destaques

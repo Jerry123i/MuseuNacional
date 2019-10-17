@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Urna Marajoara
   image: {fileID: 2800000, guid: 6f30b4924e601a94e93a51bc2babcf3d, type: 3}
+  imageOffset: 0.3
   description: "Essa pe\xE7a excepcional devido a suas dimens\xF5es (81 cm), corresponde
     a uma urna cerimonial de cer\xE2mica Marajoara com a superf\xEDcie totalmente
     recoberta por decora\xE7\xE3o feita com a t\xE9cnica da excis\xE3o, em motivos

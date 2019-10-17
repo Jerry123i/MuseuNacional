@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Celacanto
   image: {fileID: 2800000, guid: 5c5129654082c8249960f7a5943d2bb9, type: 3}
+  imageOffset: 0.15
   description: "O Celacanto do Museu Nacional chegou ao Museu Nacional no in\xEDcio
     de 1970. Foi requisitado pelo ent\xE3o diretor, Jos\xE9 Lacerda de Ara\xFAjo Feio,
     ao Museu Nacional de Hist\xF3ria Natural de Paris, na Fran\xE7a, onde estava a

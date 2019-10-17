@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "M\xE1scara Dourada"
   image: {fileID: 2800000, guid: b47f0c5bcd268914198e0343f9eaf78d, type: 3}
+  imageOffset: 0.2
   description: 
   position: 0
   category: 5

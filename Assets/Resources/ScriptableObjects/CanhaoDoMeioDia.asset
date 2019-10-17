@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Canh\xE3o do Meio-Dia"
   image: {fileID: 2800000, guid: f1597c6dc302628408c2ed199046a14e, type: 3}
+  imageOffset: 0.2
   description: "Composto de pequeno canh\xE3o de metal em base de m\xE1rmore com quadrante
     solar no qual se encontram dois suportes que sustentam uma lente, adquirido em
     1858 pelo imperador D. Pedro II para o seu gabinete de Astronomia. O instrumento

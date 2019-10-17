@@ -15,28 +15,20 @@ public class MuseumObjectEditor : Editor
 		
 		var mo = target as MuseumObject;
 
-		//var w = EditorGUIUtility.currentViewWidth;
-		//var h = w * (86f / 124f);
+		var w = EditorGUIUtility.currentViewWidth;
+		var h = w * (86f / 124f);
 
-		//Rect baseRect = EditorGUILayout.GetControlRect(false, h);
+		Rect baseRect = EditorGUILayout.GetControlRect(false, h);
 
-		//if(mo.image != null)
-		//	GUI.DrawTexture(baseRect, mo.image);
+		if(mo.image != null)
+			GUI.DrawTexture(baseRect, mo.image);
 
 		GUILayout.Space(30f);
 
 		mo.name = EditorGUILayout.TextField("Name",mo.name);
 		mo.description = EditorGUILayout.TextField(mo.description, GUILayout.Height(30.0f));
 
-		
-
 	}
 
-	public override Texture2D RenderStaticPreview(string assetPath, Object[] subAssets, int width, int height)
-	{
-		var mo = target as MuseumObject;
-
-		return mo.image as Texture2D;
-	}
 
 }

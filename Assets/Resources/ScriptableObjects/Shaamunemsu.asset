@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sha-Amun-Em-Su
   image: {fileID: 2800000, guid: 32f325faf80fe2740afbe85310e86dd3, type: 3}
+  imageOffset: 0.2
   description: "Pertenceu ao acervo do Egito Antigo, foi comprada em leil\xE3o em
     1826 por Dom Pedro I, tendo posteriormente outra parte sido comprada. N\xE3o h\xE1
     registro preciso sobre sua proced\xEAncia mas acredita-se que tenha vindo da regi\xE3o

@@ -12,6 +12,7 @@ public class MuseumObject : ScriptableObject
 {
 	public string name;
 	public Texture image;
+	public float imageOffset;
 	public string description;
 	public ObjectPosition position;
 	public Category category;

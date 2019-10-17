@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Est\xE1tua da Dama Takushit"
   image: {fileID: 2800000, guid: ce52b8bbf53f53c47bc01a84e59e9533, type: 3}
+  imageOffset: 0.5
   description: "Esta mulher tinha a fun\xE7\xE3o sacerdotal de \u201Cesposa divina
     do deus Amon\u201D, para a qual eram escolhidas as jovens de descend\xEAncia real,
     preferencialmente uma filha de Fara\xF3. Essa era a fun\xE7\xE3o de maior destaque

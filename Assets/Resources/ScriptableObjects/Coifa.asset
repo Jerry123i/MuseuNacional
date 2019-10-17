@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Coifas
   image: {fileID: 2800000, guid: 41ca4df5d1673584b8c812bdfcfa7ee0, type: 3}
+  imageOffset: 0.4
   description: "Coifa de penas com manto produzida por ind\xEDgenas do grupo Munduruk\xFA
     do Amazonas."
   position: 0

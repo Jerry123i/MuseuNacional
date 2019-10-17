@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Manto Owhyeen
   image: {fileID: 2800000, guid: 04c5c98fd4c3ce643b087439472fa5da, type: 3}
+  imageOffset: 0.2
   description: "O manto feito de plumas procedente das Ilhas Sandwich, hoje Hava\xED,
     foi doado a D. Pedro I pelo Rei Kamehameha II, em 1824, por ocasi\xE3o de uma
     escala de viagem mar\xEDtima no Rio de Janeiro. O presente foi incorporado \xE0s
