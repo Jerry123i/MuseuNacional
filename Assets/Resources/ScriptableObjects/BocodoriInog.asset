@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Bocodori-Inog
   image: {fileID: 0}
+  imageOffset: 0
   description: "Colar de unhas de tatu-canastra coletada pela Comiss\xE3o Rondon entre
     os \xEDndios Bororo 1923. Foi incorporada a cole\xE7\xE3o do Museu Nacional em
     1924."
   position: 0
-  category: 7
+  category: 6

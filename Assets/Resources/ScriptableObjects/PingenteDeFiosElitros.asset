@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: PingenteDeFiosElitros
+  m_EditorClassIdentifier: 
+  name: "Pingente de Fios \xC9litros e Pingente de Fios \xC9litros com Cr\xE2nio de
+    Ave"
+  image: {fileID: 2800000, guid: af29b3eb4e0a71140a7d6a311d05207b, type: 3}
+  imageOffset: 0.15
+  description: "Grupo Tukano Amazonas Pingente de tr\xEAs fios com 68,01 x 7,02 cm
+    Pingente de um fio com 57 x 3 cm Pe\xE7as provenientes dos \u201CCaix\xF5es do
+    Alto Rio Negro\u201D, que deram entrada no Museu Nacional em 1831. Fazem parte
+    de um dos primeiros acervos expostos no Museu com o objetivo  de demonstrar o
+    apuro t\xE9cnico da arte plum\xE1ria de nossos \xEDndios, iniciativa  condizente
+    com o esfor\xE7o dos intelectuais rom\xE2nticos de firmar a imagem do \xEDndio
+    como s\xEDmbolo nacional, na primeira metade do s\xE9culo XIX."
+  position: 0
+  category: 7

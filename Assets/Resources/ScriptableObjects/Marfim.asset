@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Marfim
   image: {fileID: 0}
+  imageOffset: 0
   description: "(Maior) S\xE9culo XIX. Presa de elefante, talhada. Bacia do Rio Congo.
     (Menor) Presa de elefante. Loango, Rep\xFAblica do Congo. S\xE9culo XIX"
   position: 0
-  category: 7
+  category: 6

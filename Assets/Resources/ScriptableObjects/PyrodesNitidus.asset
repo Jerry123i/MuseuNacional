@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: PyrodesNitidus
   m_EditorClassIdentifier: 
   name: Pyrodes nitidus
-  image: {fileID: 2800000, guid: b27a55503727eb04e992d350d181a3d5, type: 3}
+  image: {fileID: 2800000, guid: a12ab3fe5214e1c41acce495607c7609, type: 3}
+  imageOffset: 0.2
   description: "Besouros da esp\xE9cie Pyrodes nitidus, cujos machos apresentam consider\xE1vel
     varia\xE7\xE3o crom\xE1tica, com sua bela cor met\xE1lica. Esta esp\xE9cie tem
     h\xE1bitos diurnos e \xE9 freq\xFCente na Mata Atl\xE2ntica."

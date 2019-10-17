@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Colar Pr\xE9-Colombiano"
   image: {fileID: 0}
+  imageOffset: 0
   description: "Cole\xE7\xE3o de culturas Pr\xE9-Colombianas, origin\xE1rio da Venezuela."
   position: 0
-  category: 5
+  category: 6

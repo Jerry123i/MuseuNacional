@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Chatelaine
   m_EditorClassIdentifier: 
   name: "Chat\xEAlaine"
-  image: {fileID: 0}
+  image: {fileID: 2800000, guid: 3b3ab0617f1a693489e6e191260867cd, type: 3}
+  imageOffset: 0.2
   description: "S\xE9culo XIX. Corrente com 15 cm de comprimento, pendentes com 5,
     4 e 3 cm, comprimento total 20 cm \u2013 objeto de uso pessoal, muito utilizado
     no s\xE9culo XIX para prender o rel\xF3gio de bolso. Supostamente pertenceu ao
