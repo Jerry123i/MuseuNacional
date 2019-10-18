@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
-  m_Name: Aye-aye
+  m_Name: AyeAye
   m_EditorClassIdentifier: 
-  name: 
-  image: {fileID: 0}
-  imageOffset: 0
-  description: 
+  name: Aye-aye
+  image: {fileID: 2800000, guid: 3719596a9a8fd24489a42ffd9c55b21f, type: 3}
+  imageOffset: 0.3
+  description: "Daubentonia madagascariensis Esp\xE9cime taxidermizado; 50 cm de alturaProcedente
+    da ilha de Madagascar, essa rara esp\xE9cie de primata exibe not\xE1veis adapta\xE7\xF5es,
+    com dedos longos e estreitos, particularmente o terceiro, utilizado para capturar
+    larvas de insetos no interior de troncos de \xE1rvores. O aye-aye \xE9 considerado
+    um dos primatas mais amea\xE7ados do mundo."
   position: 0
-  category: 0
+  category: 1

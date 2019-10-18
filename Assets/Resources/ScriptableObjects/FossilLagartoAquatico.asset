@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
   m_Name: FossilLagartoAquatico
   m_EditorClassIdentifier: 
-  name: 
-  image: {fileID: 0}
+  name: "F\xF3ssil De Lagarto Aqu\xE1tico"
+  image: {fileID: 2800000, guid: 9cb90fdda68cf194c95ccb4f780dee21, type: 3}
   imageOffset: 0
-  description: 
+  description: "Pertencente \xE0 fam\xEDlia Mesosauridae e a esp\xE9cie Stereosternum
+    sp. Estes animais viveram durante o per\xEDodo Permiano Superior (entre 299-251
+    milh\xF5es de anos) e s\xE3o muito abundantes em rochas do Estado de S\xE3o Paulo.
+    Seu tamanho era bastante reduzido, atingindo em m\xE9dia 60 cm de comprimento.
+    Foram f\xF3sseis muito importante para embasar a teoria da Deriva Continental,
+    pois seus esqueletos s\xE3o encontrados tanto no Brasil como na \xC1frica em rochas
+    semelhantes e de mesma idade."
   position: 0
-  category: 0
+  category: 3

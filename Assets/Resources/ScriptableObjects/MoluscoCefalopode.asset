@@ -12,9 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
   m_Name: MoluscoCefalopode
   m_EditorClassIdentifier: 
-  name: 
-  image: {fileID: 0}
+  name: Conchas de Molusco Cefalopode
+  image: {fileID: 2800000, guid: abcbf322ddc4cec4aa4fa8d69448ed93, type: 3}
   imageOffset: 0
-  description: 
+  description: "Da esp\xE9cie Nautilus pompilius. Os n\xE1utilos s\xE3o moluscos cefal\xF3podes,
+    parentes pr\xF3ximos dos polvos e lulas. Os exemplares da foto possuem entre 21
+    e 17 cm de di\xE2metro. Sua concha, quando cortada, revela um revestimento de
+    nacarado brilhante e exibe uma espirais internas quase do mesmo tamanho. A concha
+    exibe contra-sombreamento, sendo clara no fundo e escura no topo para ajudar a
+    evitar predadores, quando visto de cima, se mistura com a escurid\xE3o do mar,
+    e quando visto de baixo, se mistura com a luz que vem de cima. O nautilus habita
+    as \xE1guas oce\xE2nicas de grande parte do sul do Pac\xEDfico, mas tamb\xE9m
+    j\xE1 foi encontrado perto de recifes e no fundo do mar nas costas da Austr\xE1lia,
+    Jap\xE3o e Micron\xE9sia."
   position: 0
-  category: 0
+  category: 2

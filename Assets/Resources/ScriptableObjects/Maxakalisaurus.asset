@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
   m_Name: Maxakalisaurus
   m_EditorClassIdentifier: 
-  name: 
-  image: {fileID: 0}
-  imageOffset: 0
-  description: 
+  name: Maxakalisaurus
+  image: {fileID: 2800000, guid: e4a68008dac4b82458927ef89e1769d5, type: 3}
+  imageOffset: 0.15
+  description: "R\xE9plica do dinossauro Maxakalisaurus topai descrito por pesquisadores
+    do Museu Nacional em 2006. Este dinossauro herb\xEDvoro media cerca de 13 metros
+    de comprimento e habitava durante o per\xEDodo Cret\xE1ceo Superior (entre 99,6
+    - 65,5 milh\xF5es de anos), a regi\xE3o hoje correspondente ao Munic\xEDpio do
+    Prata em Minas Gerais, por isso recebeu o nome popular de Dinoprata."
   position: 0
-  category: 0
+  category: 3

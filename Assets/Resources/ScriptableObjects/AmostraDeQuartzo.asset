@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Amostra de Quartzo
   image: {fileID: 2800000, guid: c00cd8762da93f54a90c184d950778c4, type: 3}
+  imageOffset: 0.08
   description: "Este mineral de 8x3 cm foi doado pelo presidente Get\xFAlio Vargas
     ao Museu Nacional em 1940, \xE9 procedente de Governador Valadares, Minas Gerais."
   position: 0

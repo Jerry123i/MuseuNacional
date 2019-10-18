@@ -12,9 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
   m_Name: CranioJacareAcu
   m_EditorClassIdentifier: 
-  name: 
-  image: {fileID: 0}
+  name: "Cr\xE2nio de Jacar\xE9-A\xE7u"
+  image: {fileID: 2800000, guid: 1a89b04e72ac09a48a02c9a648c4d51b, type: 3}
   imageOffset: 0
-  description: 
+  description: "Cr\xE2nio de Jacar\xE9-A\xE7u, pertencente a esp\xE9cie Melanosuchus
+    niger que foi coletado nas margens do Rio Guapor\xE9, no estado de Rond\xF4nia.
+    O esp\xE9cime inteiro foi coletado com 4,35 m pelo coronel Alu\xEDsio Ferreira
+    (1897-1980), atuante na cria\xE7\xE3o do Estado de Rond\xF4nia. \xC9 amplamente
+    distribu\xEDdo na bacia Amaz\xF4nica, apresentando h\xE1bito semiaqu\xE1tico,
+    podendo atingir at\xE9 5 metros de comprimento e pesar trezentos quilogramas.
+    Representa um predador de topo de cadeia alimentar. Exemplares adultos podem predar
+    pumas, on\xE7as e sucuris. O Jacar\xE9-a\xE7u \xE9 ov\xEDparo e as f\xEAmeas constroem
+    seus ninhos nas margens de lagos e rios, onde seus ovos s\xE3o depositados. As
+    f\xEAmeas realizam cuidado parental guardando a ninhada e espantando poss\xEDveis
+    predadores com vocaliza\xE7\xF5es de advert\xEAncia e retalia\xE7\xE3o direta.
+    Material tombado na cole\xE7\xE3o cient\xEDfica de r\xE9pteis do Museu Nacional/UFRJ."
   position: 0
-  category: 0
+  category: 1

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Afrescos de Pomp\xE9ia"
   image: {fileID: 2800000, guid: 35aaf30304cbadd4791ec236b14f9493, type: 3}
-  imageOffset: 0
+  imageOffset: 0.092
   description: "Par de afrescos provenientes do  Templo de Isis, em Pomp\xE9ia, localizados
     originalmente nas paredes inferiores da sala de reuni\xE3o  dos devotos da deusa.
     Ambos com temas mar\xEDtimos, apresentam figuras centrais \u2013 respectivamente

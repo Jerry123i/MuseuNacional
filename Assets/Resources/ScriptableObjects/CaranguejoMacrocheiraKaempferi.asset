@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
   m_Name: CaranguejoMacrocheiraKaempferi
   m_EditorClassIdentifier: 
-  name: Caranguejo - Macrocheira kaempferi
-  image: {fileID: 0}
+  name: Macrocheira kaempferi
+  image: {fileID: 2800000, guid: dbb46b719119bac4bb05004efc650942, type: 3}
+  imageOffset: 0.2
   description: "Crust\xE1ceo dos mares do Jap\xE3o vive em grandes profundidades (270
     a 300 m). A carapa\xE7a pode medir 37,5 cm e a distancia entre as extremidades
     dos ap\xEAndices maiores distendido pode atingir 5m. Ele \xE9 o maior dos artr\xF3podes

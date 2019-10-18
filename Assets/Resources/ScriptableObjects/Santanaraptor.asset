@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
+  m_Name: Santanaraptor
+  m_EditorClassIdentifier: 
+  name: SantanaRaptor
+  image: {fileID: 2800000, guid: fb6c7388fee41874db56f2d88a8a1854, type: 3}
+  imageOffset: 0.4
+  description: "Reconstru\xE7\xE3o em vida do dinossauro brasileiro Santanaraptor
+    placidus. Esta esp\xE9cie de dinossauro foi descrita por pesquisadores do Museu
+    Nacional, representa um dinossauro ter\xF3pode com parentesco com os Tyrannosauroidea.
+    Vivia no Nordeste do Brasil h\xE1 110 milh\xF5es de anos durante o per\xEDodo
+    Cret\xE1ceo Inferior.  com aproximadamente . \xC9 a \xFAnica esp\xE9cie descrita
+    para o g\xEAnero Santanaraptor. Foi escavado em 1996 na Forma\xE7\xE3o Santana
+    no estado do Cear\xE1, e al\xE9m dos ossos tamb\xE9m foram encontrados m\xFAsculos,
+    vasos sangu\xEDneos e pele. Seu nome foi dado em homenagem ao local de sua coleta
+    nas proximidades da cidade de Santana do Cariri e ao fil\xF3sofo, professor Santanense,
+    fundador do Museu de Paleontologia de Santana do Cariri e reitor da Universidade
+    Regional do Cariri, Pl\xE1cido Cidade Nuvens. O esp\xE9cime encontrado media 1,6
+    metros e pertencia a um juvenil. Calcula-se que o Santanaraptor adulto pudesse
+    alcan\xE7ar 2,5 metros."
+  position: 0
+  category: 3

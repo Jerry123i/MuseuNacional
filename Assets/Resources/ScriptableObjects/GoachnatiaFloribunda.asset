@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
   m_Name: GoachnatiaFloribunda
   m_EditorClassIdentifier: 
-  name: 
-  image: {fileID: 0}
-  imageOffset: 0
-  description: 
+  name: Gochnatia floribunda Cabrera
+  image: {fileID: 2800000, guid: eccf0f22866416b479b86eb202f3f355, type: 3}
+  imageOffset: 0.45
+  description: "Exsicata de planta da fam\xEDlia ASTERACEAE pertencente a esp\xE9cie
+    Gochnatia floribunda Cabrera. Este esp\xE9cime foi coletado por Glaziou, em 1883,
+    na Serra do Cara\xE7a, Minas Gerais e serviu de base para a descri\xE7\xE3o original
+    da esp\xE9cie. As Exsicatas s\xE3o uma amostra de planta prensada e em seguida
+    seca numa estufa (herborizada), fixada em uma cartolina de tamanho padr\xE3o acompanhadas
+    de uma etiqueta ou r\xF3tulo contendo informa\xE7\xF5es sobre o vegetal e o local
+    de coleta, para fins de estudo bot\xE2nico."
   position: 0
   category: 0

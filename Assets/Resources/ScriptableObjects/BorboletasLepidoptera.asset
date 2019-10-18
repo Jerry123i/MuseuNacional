@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
   m_Name: BorboletasLepidoptera
   m_EditorClassIdentifier: 
-  name: 
-  image: {fileID: 0}
-  imageOffset: 0
-  description: 
+  name: Borboletas Lepidoptera
+  image: {fileID: 2800000, guid: c0a0921ca98b5784fa1de18bf9ea559d, type: 3}
+  imageOffset: 0.05
+  description: "Belos exemplares de mariposas e borboletas da fauna brasileira. A
+    grande mariposa representa o bicho da seda brasileiro e as outras tr\xEAs borboletas
+    representam esp\xE9cies em risco de extin\xE7\xE3o. Apesar de suas diferen\xE7as
+    todas pertencem a Ordem Lepidoptera."
   position: 0
-  category: 0
+  category: 2

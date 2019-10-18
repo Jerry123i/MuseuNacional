@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08f524927534a247926c39281f65e7e, type: 3}
   m_Name: EstrelaDoMarDeProfundidade
   m_EditorClassIdentifier: 
-  name: 
-  image: {fileID: 0}
-  imageOffset: 0
-  description: 
+  name: Estrela-do-mar de Profundidade
+  image: {fileID: 2800000, guid: 56ce2eee74a73514788a3be26b1a7afa, type: 3}
+  imageOffset: 0.1
+  description: "Da esp\xE9cie Nymphaster arenatus. Possuem de 4 a 10 cm de di\xE2metro
+    e s\xE3o estrelas do mar t\xEDpicas de \xE1guas profundas, atingindo regi\xF5es
+    de 200 a 3.000 metros de profundidade. Habitam todas as \xE1guas do Oceano Atl\xE2ntico."
   position: 0
-  category: 0
+  category: 2
