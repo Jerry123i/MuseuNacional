@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CameraHandler : MonoBehaviour
 {
-
     public GameObject camera_GameObject;
 
     Vector2 StartPosition;
@@ -55,6 +54,9 @@ public class CameraHandler : MonoBehaviour
             DragStartPosition = GetWorldPositionOfFinger(1);
             Finger0Position = GetWorldPositionOfFinger(0);
         }
+
+		camera_GameObject.transform.position = new Vector3(camera_GameObject.transform.position.x, camera_GameObject.transform.position.y, -10.0f);
+
     }
 
     Vector2 GetWorldPosition()

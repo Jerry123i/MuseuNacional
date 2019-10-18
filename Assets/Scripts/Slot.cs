@@ -29,10 +29,14 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	private void Awake()
 	{
 		canvas.enabled = false;
+		placedObject = null;
 	}
 
 	public void Place(MuseumObject museumObject)
 	{
+		if (placedObject != null)
+			return;
+
 		placedObject = museumObject;
 		spriteRenderer.sprite = fullSprite;
 		animator.SetTrigger("Place");
@@ -40,6 +44,9 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
 	public void Empty()
 	{
+		if (placedObject == null)
+			return;
+
 		animator.SetTrigger("Empty");
 		placedObject = null;
 		spriteRenderer.sprite = emptySprite;
