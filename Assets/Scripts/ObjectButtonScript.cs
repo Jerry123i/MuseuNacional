@@ -48,12 +48,12 @@ public class ObjectButtonScript : MonoBehaviour, IPointerDownHandler
 
 		image.texture = o.image;
 
-		if (originalImageProportion < 1)
+		if (originalImageProportion < buttonImageProportion)
 		{
 			image.uvRect = new Rect(0, o.imageOffset, 1, originalImageProportion* inverseButtonImageProportion);
 
 		}
-		else if (originalImageProportion > 1)
+		else if (originalImageProportion > buttonImageProportion)
 		{
 
 			image.uvRect = new Rect(o.imageOffset, 0, inverseOriginalImageProportion* buttonImageProportion, 1);

@@ -97,7 +97,6 @@ public class MenuManager : MonoBehaviour
 	
 	void ChangeTab(int index)
 	{
-		Debug.Log($"Change Tab {index}");
 		SelectedTabIndex = index;
 	}
 
