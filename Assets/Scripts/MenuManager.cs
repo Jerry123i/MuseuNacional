@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -15,6 +15,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject objectsMenu;
 	[SerializeField] private RectTransform toggleMenuButton;
 	[SerializeField] private RectTransform toggleMenuArrow;
+	[SerializeField] private RectTransform checkmarkButton;
+	[SerializeField] private GameObject notificationCanvas;
 
 	private Object[] allObjects;
 
@@ -80,14 +82,17 @@ public class MenuManager : MonoBehaviour
 		for (int i = 0; i < allObjects.Length; i++)
 		{
 			MuseumObject museumObject = (MuseumObject)allObjects[i];
-			CategoryTab tab = categoryTabs[(int)museumObject.category];
 
-			GameObject newButton = Instantiate(buttonPrefab);
-			newButton.GetComponent<RectTransform>().SetParent(tab.content);
-			ObjectButtonScript buttonScript = newButton.GetComponent<ObjectButtonScript>();
+			if (museumObject.image != null)
+			{
+				CategoryTab tab = categoryTabs[(int)museumObject.category];
 
-			buttonScript.SetObject(museumObject);
+				GameObject newButton = Instantiate(buttonPrefab);
+				newButton.GetComponent<RectTransform>().SetParent(tab.content);
+				ObjectButtonScript buttonScript = newButton.GetComponent<ObjectButtonScript>();
 
+				buttonScript.SetObject(museumObject);
+			}
 		}
 
 		for (int i = 0; i < categoryTabs.Count; i++)
@@ -107,7 +112,6 @@ public class MenuManager : MonoBehaviour
 
     public void ToggleObjectsMenu()
     {
-		//objectsMenu.SetActive(!objectsMenu.activeInHierarchy);
 
 		if (!isMenuOpen)
 		{
@@ -127,6 +131,7 @@ public class MenuManager : MonoBehaviour
 
 			toggleMenuButton.DOMoveY((sample.anchorMin.y - 0.1f) * screenHeight, 0.8f);
 			toggleMenuArrow.DORotate(new Vector3(0, 0, 180), 0.75f);
+			checkmarkButton.DOMoveY(-(checkmarkButton.sizeDelta.y + checkmarkButton.position.y), 0.4f);
 
 			isMenuOpen = true;
 		}
@@ -148,11 +153,16 @@ public class MenuManager : MonoBehaviour
 
 			toggleMenuButton.DOMoveY(screenHeight - tabRecoilHeight - toggleMenuButton.sizeDelta.y, 0.8f);
 			toggleMenuArrow.DORotate(new Vector3(0, 0, 0), .75f);
+			checkmarkButton.DOMoveY((checkmarkButton.sizeDelta.y - 50f), 0.4f);
 
 			isMenuOpen = false;
 		}
 
-
     }
+
+	public void OpenNotificationCanvas()
+	{
+		notificationCanvas.GetComponent<Animator>().SetBool("isDown", true);
+	}
 
 }
