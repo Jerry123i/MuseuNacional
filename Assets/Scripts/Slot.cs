@@ -52,6 +52,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 		animator.SetTrigger("Empty");
 		placedObject = null;
 		spriteRenderer.sprite = emptySprite;
+		ObjectPlacerManager.placer.FilledStands--;
 	}
 
 	public void OnPointerEnter(PointerEventData eventData)
@@ -73,8 +74,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	}
 
 	public void OnPointerClick(PointerEventData eventData)
-	{
-		
+	{		
 		OpenCanvas();			
 	}
 

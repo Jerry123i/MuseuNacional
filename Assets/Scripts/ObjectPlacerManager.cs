@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ObjectPlacerManager : MonoBehaviour
 {
@@ -13,6 +14,18 @@ public class ObjectPlacerManager : MonoBehaviour
 
     public CameraHandler cameraHandler;
 
+	public TextMeshProUGUI standTracker;
+
+	public int maxStands;
+	private int filledStands;
+
+	public int FilledStands { get => filledStands;
+
+		set {
+			filledStands = value;
+			standTracker.text = ($"{filledStands}/{maxStands}");
+		} }
+
 	private void Awake()
 	{
 		if(placer != null)
@@ -24,7 +37,7 @@ public class ObjectPlacerManager : MonoBehaviour
 		{
 			placer = this;
 		}
-
+		FilledStands = 0;
 		menuManager = GetComponent<MenuManager>();
 	}
 
@@ -57,6 +70,7 @@ public class ObjectPlacerManager : MonoBehaviour
 	private void Build()
 	{
 		selectedSlot.Place(heldObject);
+		FilledStands++;
         selectedSlot = null;
 		heldObject = null;
 	}
