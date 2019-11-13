@@ -15,15 +15,18 @@ public class ObjectPlacerManager : MonoBehaviour
     public CameraHandler cameraHandler;
 
 	public TextMeshProUGUI standTracker;
+	public UnityEngine.UI.Button completeButton;
 
 	public int maxStands;
 	private int filledStands;
 
+	
 	public int FilledStands { get => filledStands;
 
 		set {
 			filledStands = value;
 			standTracker.text = ($"{filledStands}/{maxStands}");
+			completeButton.interactable = filledStands >= maxStands;
 		} }
 
 	private void Awake()
