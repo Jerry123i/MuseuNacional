@@ -9,6 +9,8 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	public MuseumObject placedObject;
 
 	public Canvas canvas;
+	public GameObject colorCanvas;
+	public GameObject colorButton;
 
 	private float clock;
 	private IEnumerator holdMouseRoutine;
@@ -72,10 +74,8 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
 	public void OnPointerClick(PointerEventData eventData)
 	{
-		if (IsFull())
-		{
-			OpenCanvas();			
-		}
+		
+		OpenCanvas();			
 	}
 
 	public void OnPointerDown(PointerEventData eventData)
@@ -118,11 +118,12 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
 	public void OpenCanvas()
 	{
+		colorButton.SetActive(true);
 		canvas.enabled = true;
 	}
 	public void CloseCanvas()
 	{
-		Debug.Log("Close canvas");
+		colorCanvas.SetActive(false);
 		canvas.enabled = false;
 	}
 
@@ -149,6 +150,16 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
 		return (mousePosition - position).magnitude < 70.0f; //Falta multiplicar por uma funcao do tamanho da camera isso aqui
 
+	}
+
+	public void ToggleColorCanvas()
+	{
+		colorButton.SetActive(colorCanvas.activeInHierarchy);
+		colorCanvas.SetActive(!colorCanvas.activeInHierarchy);
+	}
+	public void ChangeColor(Color color)
+	{
+		spriteRenderer.color = color;
 	}
 
 
