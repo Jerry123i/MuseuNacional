@@ -44,7 +44,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
 	public void Empty()
 	{
-		if (placedObject == null)
+		if(placedObject == null)
 			return;
 
 		animator.SetTrigger("Empty");

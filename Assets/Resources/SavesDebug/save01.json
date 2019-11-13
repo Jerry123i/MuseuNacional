@@ -3,6 +3,38 @@
         {
             "slotName": "floorSlotIso",
             "objectName": "*vazio*"
+        },
+        {
+            "slotName": "floorSlotIso (3)",
+            "objectName": "*vazio*"
+        },
+        {
+            "slotName": "floorSlotIso (5)",
+            "objectName": "*vazio*"
+        },
+        {
+            "slotName": "floorSlotIso (4)",
+            "objectName": "*vazio*"
+        },
+        {
+            "slotName": "floorSlotIso (1)",
+            "objectName": "*vazio*"
+        },
+        {
+            "slotName": "floorSlotIso (7)",
+            "objectName": "*vazio*"
+        },
+        {
+            "slotName": "floorSlotIso (6)",
+            "objectName": "*vazio*"
+        },
+        {
+            "slotName": "floorSlotIso (8)",
+            "objectName": "*vazio*"
+        },
+        {
+            "slotName": "floorSlotIso (2)",
+            "objectName": "*vazio*"
         }
     ]
 }

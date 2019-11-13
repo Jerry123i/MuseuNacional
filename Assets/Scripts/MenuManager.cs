@@ -16,7 +16,7 @@ public class MenuManager : MonoBehaviour
 	[SerializeField] private RectTransform toggleMenuButton;
 	[SerializeField] private RectTransform toggleMenuArrow;
 	[SerializeField] private RectTransform checkmarkButton;
-	[SerializeField] private GameObject notificationCanvas;
+	[SerializeField] private GameObject notificationCanvas;	
 
 	private Object[] allObjects;
 
@@ -50,6 +50,7 @@ public class MenuManager : MonoBehaviour
 
 		LoadObjects();
 		CreateMenus();
+		SetOpenInfoLogCanvas(true);
 	}
 
 	private void LoadObjects()
@@ -160,9 +161,14 @@ public class MenuManager : MonoBehaviour
 
     }
 
-	public void OpenNotificationCanvas()
+	public void SetOpenNotificationCanvas(bool state)
 	{
-		notificationCanvas.GetComponent<Animator>().SetBool("isDown", true);
+		notificationCanvas.GetComponent<Animator>().SetBool("NotificationisDown", state);
+	}
+
+	public void SetOpenInfoLogCanvas(bool state)
+	{
+		notificationCanvas.GetComponent<Animator>().SetBool("InfoLogIsDown", state);
 	}
 
 }
