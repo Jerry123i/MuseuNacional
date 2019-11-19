@@ -10,12 +10,15 @@ public class ObjectPlacerManager : MonoBehaviour
 	public MenuManager menuManager;
 
 	public MuseumObject heldObject;
-	public Slot selectedSlot;
+	public Slot objectPlacementSelectedSlot;
+	private Slot moveSlotSelectedSlot;
 
     public CameraHandler cameraHandler;
 
 	public TextMeshProUGUI standTracker;
 	public UnityEngine.UI.Button completeButton;
+
+	public List<Slot> slots;
 
 	public int maxStands;
 	private int filledStands;
@@ -42,6 +45,7 @@ public class ObjectPlacerManager : MonoBehaviour
 		}
 		FilledStands = 0;
 		menuManager = GetComponent<MenuManager>();
+		slots = new List<Slot>(GameObject.FindObjectsOfType<Slot>());
 	}
 
 	private void Update()
@@ -56,26 +60,37 @@ public class ObjectPlacerManager : MonoBehaviour
 	{
 		menuManager.SetScrollbar(true);
         cameraHandler.enabled = true;
-		if(heldObject != null && selectedSlot == null)
+		if(heldObject != null && objectPlacementSelectedSlot == null)
 		{
 			heldObject = null;
 		}
-		else if(heldObject != null && selectedSlot != null)
+		else if(heldObject != null && objectPlacementSelectedSlot != null)
 		{
 			Build();
 		}
         else
         {
-            selectedSlot = null;
+            objectPlacementSelectedSlot = null;
         }
 	}
 
 	private void Build()
 	{
-		selectedSlot.Place(heldObject);
+		objectPlacementSelectedSlot.Place(heldObject);
 		FilledStands++;
-        selectedSlot = null;
+        objectPlacementSelectedSlot = null;
 		heldObject = null;
+	}
+
+	public void StartSlotMovment(Slot movingSlot)
+	{
+		for (int i = 0; i < slots.Count; i++) {
+			if (slots[i].state == SlotStates.VOID && slots[i] != movingSlot)
+				slots[i].animator.SetBool("WaitingPlacement", true);
+		}
+
+		moveSlotSelectedSlot = movingSlot;
+
 	}
 
 }

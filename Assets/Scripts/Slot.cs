@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+public enum SlotStates { VOID, EMPTY, FULL};
+
 public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IPointerDownHandler
 {
 	public ObjectPosition slotType;
+	public SlotStates state;
 	public MuseumObject placedObject;
 
 	public Canvas canvas;
@@ -15,11 +18,12 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	private float clock;
 	private IEnumerator holdMouseRoutine;
 
-	[SerializeField]private SpriteRenderer spriteRenderer;
+	public SpriteRenderer spriteRenderer;
 	[SerializeField] private Sprite emptySprite;
 	[SerializeField] private Sprite fullSprite;
+	[SerializeField] private Sprite voidSprite;
 
-	[SerializeField] private Animator animator;
+	public Animator animator;
 
 	public bool debug;
 
@@ -32,6 +36,13 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	{
 		canvas.enabled = false;
 		placedObject = null;
+
+		if (state == SlotStates.VOID)
+		{
+			spriteRenderer.enabled = false;
+			animator.SetBool("IsVoid", true);
+		}
+
 	}
 
 	public void Place(MuseumObject museumObject)
@@ -42,6 +53,8 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 		placedObject = museumObject;
 		spriteRenderer.sprite = fullSprite;
 		animator.SetTrigger("Place");
+		animator.SetBool("IsVoid", false);
+		state = SlotStates.FULL;
 	}
 
 	public void Empty()
@@ -53,11 +66,25 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 		placedObject = null;
 		spriteRenderer.sprite = emptySprite;
 		ObjectPlacerManager.placer.FilledStands--;
+		state = SlotStates.EMPTY;
+	}
+
+	public void Remove()
+	{
+		placedObject = null;
+		animator.SetBool("IsVoid", true);
+		state = SlotStates.VOID;
+	}
+
+	public void Replace(Slot slot)
+	{
+		Place(slot.placedObject);
+		spriteRenderer.color = slot.spriteRenderer.color;
 	}
 
 	public void OnPointerEnter(PointerEventData eventData)
 	{
-		ObjectPlacerManager.placer.selectedSlot = this;
+		ObjectPlacerManager.placer.objectPlacementSelectedSlot = this;
 	}
 
 	public void OnPointerExit(PointerEventData eventData)
@@ -68,8 +95,8 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	private IEnumerator LateOnPointerExit()
 	{
 		yield return new WaitForEndOfFrame();
-		if (ObjectPlacerManager.placer.selectedSlot == this)
-			ObjectPlacerManager.placer.selectedSlot = null;
+		if (ObjectPlacerManager.placer.objectPlacementSelectedSlot == this)
+			ObjectPlacerManager.placer.objectPlacementSelectedSlot = null;
 
 	}
 
@@ -156,6 +183,11 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	{
 		colorButton.SetActive(colorCanvas.activeInHierarchy);
 		colorCanvas.SetActive(!colorCanvas.activeInHierarchy);
+	}
+
+	public void StartSlotMovment()
+	{
+		ObjectPlacerManager.placer.StartSlotMovment(this);
 	}
 	public void ChangeColor(Color color)
 	{
