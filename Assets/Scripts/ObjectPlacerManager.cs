@@ -11,7 +11,7 @@ public class ObjectPlacerManager : MonoBehaviour
 
 	public MuseumObject heldObject;
 	public Slot objectPlacementSelectedSlot;
-	private Slot moveSlotSelectedSlot;
+	private Slot replacementSelectedSlot;
 
     public CameraHandler cameraHandler;
 
@@ -82,15 +82,38 @@ public class ObjectPlacerManager : MonoBehaviour
 		heldObject = null;
 	}
 
-	public void StartSlotMovment(Slot movingSlot)
+	public void StartSlotReplacement(Slot movingSlot)
 	{
 		for (int i = 0; i < slots.Count; i++) {
 			if (slots[i].state == SlotStates.VOID && slots[i] != movingSlot)
 				slots[i].animator.SetBool("WaitingPlacement", true);
 		}
 
-		moveSlotSelectedSlot = movingSlot;
+		replacementSelectedSlot = movingSlot;
+	}
 
+	public void InterruptSlotReplacement()
+	{
+		for (int i = 0; i < slots.Count; i++) {
+			if (slots[i].state == SlotStates.VOID)
+				slots[i].animator.SetBool("WaitingPlacement", false);
+		}
+	}
+
+	public void ReplaceSlot(Slot newSlotPosition)
+	{
+		if (replacementSelectedSlot == null)
+			return;
+
+		newSlotPosition.Replace(replacementSelectedSlot);		
+		replacementSelectedSlot.Remove();
+
+		for (int i = 0; i < slots.Count; i++) {
+			if (slots[i].state == SlotStates.VOID)
+				slots[i].animator.SetBool("WaitingPlacement", false);
+		}
+
+		replacementSelectedSlot = null;
 	}
 
 }

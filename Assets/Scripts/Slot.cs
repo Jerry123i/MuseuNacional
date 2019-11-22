@@ -78,7 +78,14 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
 	public void Replace(Slot slot)
 	{
-		Place(slot.placedObject);
+		if (slot.placedObject != null)
+			Place(slot.placedObject);
+		else
+			state = SlotStates.EMPTY;
+
+		animator.SetBool("IsVoid", false);
+		animator.SetBool("WaitingPlacement", false);
+
 		spriteRenderer.color = slot.spriteRenderer.color;
 	}
 
@@ -135,6 +142,10 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 			{
 				CloseCanvas();
 			}
+			if(state == SlotStates.VOID && !IsMouseOnTopOfObject())
+			{
+				animator.SetBool("WaitingPlacement", false);
+			}
 		}
 		if (Input.GetMouseButtonUp(0))
 		{
@@ -185,10 +196,16 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 		colorCanvas.SetActive(!colorCanvas.activeInHierarchy);
 	}
 
-	public void StartSlotMovment()
+	public void StartSlotReplacement()
 	{
-		ObjectPlacerManager.placer.StartSlotMovment(this);
+		ObjectPlacerManager.placer.StartSlotReplacement(this);
 	}
+
+	public void PlaceSlotHere()
+	{
+		ObjectPlacerManager.placer.ReplaceSlot(this);
+	}
+
 	public void ChangeColor(Color color)
 	{
 		spriteRenderer.color = color;
