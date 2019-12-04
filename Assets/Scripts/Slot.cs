@@ -60,7 +60,10 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	public void Empty()
 	{
 		if(placedObject == null)
+		{
+			Remove();
 			return;
+		}
 
 		animator.SetTrigger("Empty");
 		placedObject = null;
@@ -204,6 +207,13 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	public void PlaceSlotHere()
 	{
 		ObjectPlacerManager.placer.ReplaceSlot(this);
+	}
+
+	public void CreateNewSlot()
+	{
+		state = SlotStates.EMPTY;
+		animator.SetBool("IsVoid", false);
+		animator.SetBool("WaitingPlacement", false);
 	}
 
 	public void ChangeColor(Color color)

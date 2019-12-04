@@ -30,7 +30,8 @@ public class ObjectPlacerManager : MonoBehaviour
 			filledStands = value;
 			standTracker.text = ($"{filledStands}/{maxStands}");
 			completeButton.interactable = filledStands >= maxStands;
-		} }
+		}
+	}
 
 	private void Awake()
 	{
@@ -92,6 +93,14 @@ public class ObjectPlacerManager : MonoBehaviour
 		replacementSelectedSlot = movingSlot;
 	}
 
+	public void StartNewSlotPlacement()
+	{
+		for (int i = 0; i < slots.Count; i++) {
+			if (slots[i].state == SlotStates.VOID)
+				slots[i].animator.SetBool("WaitingPlacement", true);
+		}
+	}
+
 	public void InterruptSlotReplacement()
 	{
 		for (int i = 0; i < slots.Count; i++) {
@@ -103,7 +112,11 @@ public class ObjectPlacerManager : MonoBehaviour
 	public void ReplaceSlot(Slot newSlotPosition)
 	{
 		if (replacementSelectedSlot == null)
+		{
+			newSlotPosition.CreateNewSlot();
 			return;
+		}
+
 
 		newSlotPosition.Replace(replacementSelectedSlot);		
 		replacementSelectedSlot.Remove();
