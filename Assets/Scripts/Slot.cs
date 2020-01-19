@@ -25,6 +25,9 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
 	public Animator animator;
 
+	private AudioSource audioSource;
+	public AudioClip objectPlacementAudio;
+
 	public bool debug;
 
 	private void FixedUpdate()
@@ -42,6 +45,8 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 			spriteRenderer.enabled = false;
 			animator.SetBool("IsVoid", true);
 		}
+
+		audioSource = GetComponent<AudioSource>();
 
 	}
 
@@ -219,6 +224,11 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 	public void ChangeColor(Color color)
 	{
 		spriteRenderer.color = color;
+	}
+
+	public void PlayPlacementSound()
+	{
+		audioSource.PlayOneShot(objectPlacementAudio);
 	}
 
 

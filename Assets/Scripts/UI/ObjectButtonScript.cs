@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,12 +13,21 @@ public class ObjectButtonScript : MonoBehaviour, IPointerDownHandler
 	public TextMeshProUGUI label;
 	public Animator animator;
 
+	public AudioClip interactionAudio;
+	private AudioSource audioSource;
+
+	private void Awake()
+	{
+		audioSource = GetComponent<AudioSource>();
+	}
+
 	public void OnPointerDown(PointerEventData eventData)
 	{
 		ObjectPlacerManager.placer.heldObject = museumObject;
 		ObjectPlacerManager.placer.menuManager.SetScrollbar(false);
         ObjectPlacerManager.placer.cameraHandler.enabled = false;
 		animator.SetBool("Pressed", true);
+		audioSource.PlayOneShot(interactionAudio);
 	}
 
 	private void Update()
